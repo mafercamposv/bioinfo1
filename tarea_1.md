@@ -1,1 +1,3 @@
 Tarea 1
+El capítulo que más me lamó la atención del libro Bioinformatics Algorithms fue el de la secuenciación de antibióticos.
+En la última décado se ha vista un aumento en casos de resistencia bacteriana a antibióticos, esto presenta un problema en el sector salud por ello se presenta como todo un tópico de investigación en la actualidad. Además, según lo que leíen este capítulo, se habla de cómo las bacterias usan la NRP sintetasa que sintetiza péptidos no ribosomales y es la responsable de crear péptidos antibióticos que no se encuentran en el código genético. Me interesa mucho cómo con la evolución, los NRPs en bacterias y virus han creado estos mecanismos para poder matar a sus enemigos y hoy en este mecanismo tiene aplicaciones farmacológicas.
