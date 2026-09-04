@@ -1,0 +1,60 @@
+---
+title: "Tarea Sesión 2 - Tipos de Secuenciamiento"
+author: "Mafer Campos"
+format: html
+editor: visual
+---
+
+Resultados de cada tecnología de búsquedas en Google Academic:
+
+Sanger sequencing - About 593,000 results - 41.01%
+
+Illumina - About 634,000 results - 43.85%
+
+Ion Torrent - About 65,700 results - 4.54%
+
+PacBio- About 66,200 results - 4.58%
+
+Oxford Nanopore- About 87,000 results - 6.02%
+
+## 1. Secuenciación de Sanger (1ra Generación)
+
+Fue la tecnología principal para descifrar el primer genoma humano.
+
+**¿Cómo funciona?**
+
+Utiliza la ADN polimerasa para copiar el ADN, pero se introducen nucleótidos modificados (didesoxinucleótidos) que están marcados con colores fluorescentes distintos. Cuando uno de estos se incorpora, detiene inmediatamente la síntesis de esa hebra. Al final, obtienes fragmentos de todos los tamaños posibles, los cuales se ordenan del más corto al más largo, y un láser lee el último color de cada fragmento para deducir la secuencia base por base.
+
+## 2. Secuenciación Illumina (2da Generación)
+
+**El estándar actual.** Como notaste por el abrumador volumen de resultados en tus búsquedas, hoy en día domina la genómica.
+
+**¿Cómo funciona?**
+
+El ADN se fragmenta y se pega a una placa de vidrio microscópica (celda de flujo). Allí ocurre una "amplificación en puente", donde cada fragmento se clona miles de veces formando clústeres idénticos. Luego, la máquina añade nucleótidos fluorescentes reversibles. Una cámara toma una fotografía del clúster cada vez que se añade una base (iluminando de un color). Tras la foto, se elimina el fluoróforo y el ciclo se repite.
+
+## 3. Secuenciación Ion Torrent (2da Generación)
+
+**¿Cómo funciona?**
+
+El ADN se coloca en micropocillos sobre un chip similar al de tu computadora o teléfono. El equipo inyecta un solo tipo de nucleótido a la vez (A, C, T o G). Si la base es complementaria, la polimerasa la une a la cadena y se libera un protón ($H^+$). El chip detecta este minúsculo cambio de pH y lo registra como un pico de voltaje. Su principal debilidad (la alta tasa de error que mencionas) ocurre en regiones donde se repite la misma letra (ej. AAAA), ya que el cambio de pH es más grande y el sensor tiene problemas para contar exactamente cuántas bases idénticas entraron de golpe.
+
+## 4. Secuenciación PacBio (3ra Generación)
+
+Permite evitar la fragmentación agresiva, logrando secuencias de 1kb a 50kb sin requerir amplificación previa.
+
+**¿Cómo funciona ?**
+
+Aísla una única molécula de ADN polimerasa y la fija en el fondo de un pozo nanoscópico.A medida que la enzima natural procesa la hebra de ADN y va incorporando los nucleótidos marcados con fluoróforos, estos emiten un destello de luz. Un sensor graba esta actividad enzimática en tiempo real continuo, literalmente viendo a la proteína hacer su trabajo.
+
+## 5. Oxford Nanopore (3ra Generación)
+
+Es portátil. Dispositivos como el MinION caben en la palma de la mano y se conectan por USB.
+
+**¿Cómo funciona?**
+
+No usa síntesis química para leer el ADN. Pasa la hebra original e intacta de ADN a través de un poro proteico insertado en una membrana sintética. Al cruzar el poro, la presencia de cada base bloquea parcialmente una corriente eléctrica constante. Como cada base tiene una forma y tamaño distintos, generan interrupciones de voltaje únicas. Un software traduce luego esas alteraciones eléctricas en la secuencia genética. Históricamente ha tenido mayor tasa de error que PacBio, aunque las redes neuronales recientes han mejorado drásticamente su precisión.
+
+![](images/clipboard-1671782563.jpeg)![](images/clipboard-3392076600.jpeg)![](images/clipboard-2990240996.jpeg)
+
+![](images/clipboard-3782101302.jpeg)
