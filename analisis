@@ -15,7 +15,7 @@ Profesor: Wilbert Gutiérrez
 
 # Introducción
 
-En este pryecto se realizará un análisis que describa el trabajo experimental del Bioproject: **PRJNA268110**, los datos genómicos disponibles y las características generales de las secuencias, incluyendo la identificación y recuperación del genoma ensamblado del organismo de estudio, en este caso, Saccharomyces Cerevisae.
+En este proyecto se realizará un análisis que describa el trabajo experimental del Bioproject: **PRJNA268110**, los datos genómicos disponibles y las características generales de las secuencias, incluyendo la identificación y recuperación del genoma ensamblado del organismo de estudio, en este caso, Saccharomyces Cerevisae.
 
 # Contexto biológico
 
@@ -95,6 +95,27 @@ Los archivos escrgados estaban en formato fatstq.
 
 \`# Datos Descargados
 
+En un archivo .slurm
+
+prefetch SRR1658454
+prefetch SRR1658455
+prefetch SRR1658456
+prefetch SRR1658457
+prefetch SRR1658458
+prefetch SRR1658459
+prefetch SRR1658460
+prefetch SRR1658461
+
+fasterq-dump SRR1658454
+fasterq-dump SRR1658455
+fasterq-dump SRR1658456
+fasterq-dump SRR1658457
+fasterq-dump SRR1658458
+fasterq-dump SRR1658459
+fasterq-dump SRR1658460
+fasterq-dump SRR1658461
+
+Correr el archivo con comando: sbatch my_script.slurm
 **Número de archivos descargados:** 16 archivos
 
 **Formato:** fastq
