@@ -1,0 +1,206 @@
+---
+title: "Proyecto Bioinfo"
+author: "Maria Fernanda Campos Valencia"
+format: html
+editor: visual
+---
+
+# Análisis exploratorio y documentación reproducible del BioProject: **PRJNA268110**
+
+Alumna: Maria Fernanda Campos Valencia
+
+Materia: Bioinformática 3er semestre
+
+Profesor: Wilbert Gutiérrez
+
+# Introducción
+
+En este pryecto se realizará un análisis que describa el trabajo experimental del Bioproject: **PRJNA268110**, los datos genómicos disponibles y las características generales de las secuencias, incluyendo la identificación y recuperación del genoma ensamblado del organismo de estudio, en este caso, Saccharomyces Cerevisae.
+
+# Contexto biológico
+
+Este proyecto biológico está enfocado hacia el estudio del organismo **Saccharromyces Cerevisae.** En este experimento expusierona a células mutantes y células silvestres a hidroxiurea, una sustancia que frena la producción de ADN.
+
+Este estudio fue llevado a cabo por **Wenyi Feng, Biochemistry and Molecular Biology, SUNY Upstate Medical University.**
+
+Fecha de registro: 20 de noviembre del 2014
+
+# Objetivo del estudio
+
+Entender qué pasa y dónde se rompe el ADN cuando la célula intenta recuperarse de la exposición a hidroxiurea?
+
+# Datos y metodología
+
+Los datos son de tipo: Transcriptoma o expresión de genes.
+
+Los investigadores utilizaron una tecnología llamada Break-Seq para mapear con mayor precisión las rupturas en los cromosomas y encontraron que las rupturas no ocurren al azar. Estas ocurren en los genes encendidos por la célula para defenderse de la hidroxiurea. Lo cual indiica que la maquinaria del ADN que está copiándolo choca contra la que está leyendo y transcribiendo los genes.
+
+Hay 2 casos:
+
+-   Células normales con MEC1:
+
+La transcripción de ADN logra avanzar más distancia durante la recuperación de la exposición a UH. El ADN se rompe principalmente en los genes de factores de transcripción para la respuesta al estrés.
+
+-   Células Mutantes con mec1:
+
+La estructura del ADN es más inestable y las roturas ocurren predominantemente en las regiones donde se ubican los genes transportadores cuando la célula intenta recuperarse del tratamiento con UH.
+
+# Fuentes de datos
+
+Repositorio: NCBI (National Center for Biotechnology) y GEO (Gene Expression Omnibus)
+
+Bioproject ID:
+
+GEO Accession: GSE63516
+
+# BioProject/BioSample/SRA.
+
+Sequenciation experiments: 8
+
++--------------+------------+--------------------------------------------------------------------+-----------------------+---------------+
+| Biosample    | SRA        | SRA                                                                | Tipo de secuenciación | Paired/SIngle |
+|              |            |                                                                    |                       |               |
+|              | Experiment | Run                                                                |                       |               |
++==============+============+====================================================================+=======================+===============+
+| SAMN03203068 | SRS749180  | [SRR1658461](https://trace.ncbi.nlm.nih.gov/Traces?run=SRR1658461) | Illumina MiSeq        | Paired        |
++--------------+------------+--------------------------------------------------------------------+-----------------------+---------------+
+| SAMN03203067 | SRS749181  | [SRR1658460](https://trace.ncbi.nlm.nih.gov/Traces?run=SRR1658460) | Illumina MiSeq        | Paired        |
++--------------+------------+--------------------------------------------------------------------+-----------------------+---------------+
+| SAMN03203066 | SRS749176  | [SRR1658456](https://trace.ncbi.nlm.nih.gov/Traces?run=SRR1658456) | Illumina MiSeq        | Paired        |
++--------------+------------+--------------------------------------------------------------------+-----------------------+---------------+
+| SAMN03203063 | SRS749174  | [SRR1658455](https://trace.ncbi.nlm.nih.gov/Traces?run=SRR1658455) | Illumina MiSeq        | Paired        |
++--------------+------------+--------------------------------------------------------------------+-----------------------+---------------+
+| SAMN03203062 | SRS749178; | [SRR1658458](https://trace.ncbi.nlm.nih.gov/Traces?run=SRR1658458) | Illumina MiSeq        | Paired        |
++--------------+------------+--------------------------------------------------------------------+-----------------------+---------------+
+| SAMN03203061 | SRS749175  | [SRR1658454](https://trace.ncbi.nlm.nih.gov/Traces?run=SRR1658454) | Illumina MiSeq        | Paired        |
++--------------+------------+--------------------------------------------------------------------+-----------------------+---------------+
+| SAMN03203059 | SRS749179  | [SRR1658459](https://trace.ncbi.nlm.nih.gov/Traces?run=SRR1658459) | Illumina MiSeq        | Paired        |
++--------------+------------+--------------------------------------------------------------------+-----------------------+---------------+
+| SAMN03203053 | SRS749177  | [SRR1658457](https://trace.ncbi.nlm.nih.gov/Traces?run=SRR1658457) | Illumina MiSeq        | Paired        |
++--------------+------------+--------------------------------------------------------------------+-----------------------+---------------+
+
+# Diferencia entre BioProject, BioSample, SRA Experiment y SRA Run.
+
+A continuación una descripción de jerarquías dentro del Bioproject.
+
+**Bioproject:** Es el proyecto que agrupa toda investigación que tiene un objetivo.
+
+**Biosample:** Es la muestra biológica física individual.
+
+**SRA Experiment:** Es el protocolo del método de secuenciación específico aplicado a una muestra biológica.
+
+**SRA Run:** Es el archivo con datos crudos generado por el secuenciador.
+
+Los archivos escrgados estaban en formato fatstq.
+
+\`# Datos Descargados
+
+**Número de archivos descargados:** 16 archivos
+
+**Formato:** fastq
+
+**Tamaño de cada archivo:**
+
+Comando usado: -h \*\_1.fastq \| sort
+
+1.1G SRR1658461_1.fastq
+
+1.3G SRR1658458_1.fastq
+
+449M SRR1658455_1.fastq
+
+522M SRR1658456_1.fastq
+
+715M SRR1658460_1.fastq
+
+741M SRR1658454_1.fastq
+
+870M SRR1658459_1.fastq
+
+960M SRR1658457_1.fastq
+
+**Número total de secuencias por archivo:**
+
+**Comando usado:** grep -c "\@SRR" \*.fastq
+
+SRR1658454_1.fastq:3438388
+
+SRR1658455_1.fastq:2090805
+
+SRR1658456_1.fastq:2428934
+
+SRR1658457_1.fastq:4452257
+
+SRR1658458_1.fastq:6080904
+
+SRR1658459_1.fastq:4037197
+
+SRR1658460_1.fastq:3317701
+
+SRR1658461_1.fastq:4961938
+
+**Longitud promedio de las secuencias:** 75bp
+
+Todas las lecturas son paired ya que al descargar los datos se descargaron 2 archivos por SRA Run: `_1.fastq` (lectura *Forward* o R1) y otro en `_2.fastq` (lectura *Reverse* o R2).
+
+4 primeras lineas del archivo:
+
+comando utilizado: head -n 4 SRR1658454_1.fastq
+
+@SRR1658454.1 1 length=75 —\> `@ Indentificador, 1 indica que se refiere a R1 y la longitud en pares de bases de la secuencia`
+
+CGGGAATTCATCATCAGTCCTTCCCACTAAGTAAACAAGGTGTCTTCATCTCTCAAATACTCACCAATATCTGCT -\> `la secuencia`
+
++SRR1658454.1 1 —\> `Separador`
+
+length=75
+
+668--+CFF9FGGGGGGGGGGGGGGGGGGGGGFFDFFGFFG8CFFFF9FFFGFGFAAFFFDF,CFC8F,CCC,\<C —\> `Puntuaciones de calidad en ASCII`
+
+# Tabla de reporte archivo fastqc
+
+| Secuencia      | Número total de reads. | Longitud de las lecturas.  |
+|----------------|------------------------|----------------------------|
+| SRR1658454     | 3,438,388              | 75 bp                      |
+| SRR1658454     | 2,090,805              | 75 bp                      |
+| SRR1658456     | 2,428,934              | 75 bp                      |
+| SRR1658457     | 4,452,257              | 75 bp                      |
+| SRR1658458     | 6,080,904              | 75 bp                      |
+| SRR1658459     | 4,037,197              | 75 bp                      |
+| **SRR1658460** | 3,317,701              | 75 bp                      |
+| SRR1658461     | 4,961,938              | 75 bp                      |
+
+# Tabla de reporte archivo fastqc
+
+![Gráfico de reporte de Fastqc de un archivo fastq.](images/Screenshot%202026-10-09%20at%2022.54.38.png)
+
+En esta captura de la muestra SRR1658455 hay 2.1 millones de fragmentos (spots) y 311.6 millones de bases en total, con tamaño de 161.1 MB y contenido de GC del 42.2%. La longitud puede ser de 74 a 75 ps. La gráfica de calidad muestra que hay valores altos de 38, lo cual indica que las lecturas son limpias y confiables para el análisis.
+
+# Herramientas
+
+Genoma de refrencia utilizado: R64
+
+Nombre del ensamblado: sacCer3
+
+Organismo: \
+Saccharomyces cerevisiae
+
+Cepa: S288C
+
+Número de Accesión:
+
+**NCBI RefSeq assembly**
+
+:   GCF_000146045.2^(†)^
+
+**Submitted GenBank assembly**
+
+:   GCA_000146045.2
+
+Tamaño total del genoma: 12.1 Mb
+
+Número de contigs/scaffolds o cromosomas: 16
+
+# Resultados
+
+Se cuantificaron las secuencias de las 8 muestras del proyecto, obteniendo un total de **30,808,124 pares** *(61,616,248 lecturas totales). La evalución de la calidad muestra que las lecturas fueron limpias, con valores Phred de alrededor de 38 puntos y un contenido de GC de 42.2%, lo cual indica que no hay contaminación en las muestras.*
