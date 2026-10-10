@@ -95,6 +95,10 @@ Los archivos escrgados estaban en formato fatstq.
 
 \`# Datos Descargados
 
+Cargar modulos necesarios:
+module avail
+module load sra/3.1.1
+
 En un archivo .slurm
 
 prefetch SRR1658454
